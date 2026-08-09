@@ -58,30 +58,6 @@ export const molecules = [
     lonePairs: [],
   },
   {
-    id: "bent_ax2e",
-    name: "Bent / V-Shaped (AX₂E)",
-    formula: "AX₂E",
-    example: "SO₂, O₃",
-    electronPairs: { total: 3, bond: 2, lone: 1 },
-    hybridization: "sp²",
-    idealGeometry: "Trigonal Planar",
-    actualShape: "Bent / V-Shaped",
-    angles: "<120° (approx 119°)",
-    examTip: "One lone pair repels bond pairs more than bond pairs repel each other, compressing the angle to < 120°.",
-    atoms: [
-      { id: "center", position: [0, 0, 0], type: "central", color: "#64748b", label: "A" },
-      { id: "atom1", position: [BOND_DISTANCE * Math.cos(degToRad(30)), -BOND_DISTANCE * Math.sin(degToRad(30)), 0], type: "peripheral", color: "#f59e0b", label: "X" },
-      { id: "atom2", position: [-BOND_DISTANCE * Math.cos(degToRad(30)), -BOND_DISTANCE * Math.sin(degToRad(30)), 0], type: "peripheral", color: "#f59e0b", label: "X" },
-    ],
-    bonds: [
-      { source: "center", target: "atom1", type: "equatorial" },
-      { source: "center", target: "atom2", type: "equatorial" },
-    ],
-    lonePairs: [
-      { id: "lp1", position: [0, LONE_PAIR_DISTANCE, 0] }
-    ],
-  },
-  {
     id: "tetrahedral_ax4",
     name: "Tetrahedral (AX₄)",
     formula: "AX₄",
@@ -356,5 +332,37 @@ export const molecules = [
       { id: "lp1", position: [0, LONE_PAIR_DISTANCE, 0] },
       { id: "lp2", position: [0, -LONE_PAIR_DISTANCE, 0] }
     ],
+  },
+  {
+    id: "pentagonal_bipyramidal_ax7",
+    name: "Pentagonal Bipyramidal (AX₇)",
+    formula: "AX₇",
+    example: "IF₇",
+    electronPairs: { total: 7, bond: 7, lone: 0 },
+    hybridization: "sp³d³",
+    idealGeometry: "Pentagonal Bipyramidal",
+    actualShape: "Pentagonal Bipyramidal",
+    angles: "90°, 72°",
+    examTip: "The five equatorial bonds are arranged in a pentagon, with two axial bonds perpendicular to them.",
+    atoms: [
+      { id: "center", position: [0, 0, 0], type: "central", color: "#64748b", label: "A" },
+      { id: "atom1", position: [0, AXIAL_DISTANCE, 0], type: "peripheral", color: "#f43f5e", label: "X_ax" },
+      { id: "atom2", position: [0, -AXIAL_DISTANCE, 0], type: "peripheral", color: "#f43f5e", label: "X_ax" },
+      { id: "atom3", position: [BOND_DISTANCE, 0, 0], type: "peripheral", color: "#8b5cf6", label: "X_eq" },
+      { id: "atom4", position: [BOND_DISTANCE * Math.cos(degToRad(72)), 0, BOND_DISTANCE * Math.sin(degToRad(72))], type: "peripheral", color: "#8b5cf6", label: "X_eq" },
+      { id: "atom5", position: [BOND_DISTANCE * Math.cos(degToRad(144)), 0, BOND_DISTANCE * Math.sin(degToRad(144))], type: "peripheral", color: "#8b5cf6", label: "X_eq" },
+      { id: "atom6", position: [BOND_DISTANCE * Math.cos(degToRad(216)), 0, BOND_DISTANCE * Math.sin(degToRad(216))], type: "peripheral", color: "#8b5cf6", label: "X_eq" },
+      { id: "atom7", position: [BOND_DISTANCE * Math.cos(degToRad(288)), 0, BOND_DISTANCE * Math.sin(degToRad(288))], type: "peripheral", color: "#8b5cf6", label: "X_eq" },
+    ],
+    bonds: [
+      { source: "center", target: "atom1", type: "axial" },
+      { source: "center", target: "atom2", type: "axial" },
+      { source: "center", target: "atom3", type: "equatorial" },
+      { source: "center", target: "atom4", type: "equatorial" },
+      { source: "center", target: "atom5", type: "equatorial" },
+      { source: "center", target: "atom6", type: "equatorial" },
+      { source: "center", target: "atom7", type: "equatorial" },
+    ],
+    lonePairs: [],
   },
 ];
