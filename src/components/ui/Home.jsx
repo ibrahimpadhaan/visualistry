@@ -23,7 +23,7 @@ export const Home = () => {
       </header>
 
       {/* Main Content */}
-      <main className="flex-1 flex flex-col items-center justify-center z-10 px-4 text-center">
+      <main className="flex-1 flex flex-col items-center justify-center z-10 px-4 text-center overflow-y-auto py-8 w-full">
         <div className="inline-block p-4 bg-slate-800/30 rounded-full mb-6 border border-slate-700/50 backdrop-blur-sm">
           <Atom size={48} className="text-blue-400" />
         </div>
@@ -31,7 +31,7 @@ export const Home = () => {
           3D Chemical Geometry
         </h2>
         <p className="text-lg md:text-xl text-slate-400 max-w-2xl mb-10 leading-relaxed">
-          Explore VSEPR theory and hybridization through interactive, mathematically precise 3D visualizations tailored for the Class 11 NCERT curriculum.
+          Explore 3D structures.
         </p>
         
         <button 
