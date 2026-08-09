@@ -16,9 +16,12 @@ export const Home = () => {
       <header className="w-full p-6 flex justify-between items-center z-10">
         <div className="flex items-center gap-3">
           <div className="p-2 bg-blue-500/10 rounded-xl text-blue-400">
-            <Atom size={28} />
+            <Atom size={36} />
           </div>
-          <h1 className="font-bold text-2xl text-slate-100 tracking-tight">Visualistry</h1>
+          <div className="flex flex-col">
+            <h1 className="font-bold text-3xl text-slate-100 tracking-tight">Visualistry</h1>
+            <p className='text-sm'>Made by Mohd Ibrahim</p>
+          </div>
         </div>
       </header>
 
