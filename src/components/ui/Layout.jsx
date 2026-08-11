@@ -14,6 +14,7 @@ export const Layout = () => {
         <button 
           onClick={() => setMobileMenuOpen(true)}
           className="p-2 bg-slate-900/80 backdrop-blur border border-slate-700/50 rounded-xl shadow-lg text-slate-200 hover:bg-slate-800 transition-colors"
+          aria-label="Open menu"
         >
           <Menu size={24} />
         </button>

@@ -15,26 +15,27 @@ export const Home = () => {
       {/* Header */}
       <header className="w-full p-6 flex justify-between items-center z-10">
         <div className="flex items-center gap-3">
-          <div className="p-2 bg-blue-500/10 rounded-xl text-blue-400">
+          <div className="p-2 bg-blue-500/10 rounded-xl text-blue-400" aria-hidden="true">
             <Atom size={36} />
           </div>
           <div className="flex flex-col">
-            <h1 className="font-bold text-3xl text-slate-100 tracking-tight">Visualistry</h1>
-            <p className='text-sm'>Made by Mohd Ibrahim</p>
+            <span className="font-bold text-3xl text-slate-100 tracking-tight">Visualistry</span>
+            <span className='text-sm'>Made by Mohd Ibrahim</span>
           </div>
         </div>
       </header>
 
       {/* Main Content */}
       <main className="flex-1 flex flex-col items-center justify-center z-10 px-4 text-center overflow-y-auto py-8 w-full">
-        <div className="inline-block p-4 bg-slate-800/30 rounded-full mb-6 border border-slate-700/50 backdrop-blur-sm">
+        <h1 className="sr-only">Visualistry - Free Interactive 3D Chemical Structures Viewer</h1>
+        <div className="inline-block p-4 bg-slate-800/30 rounded-full mb-6 border border-slate-700/50 backdrop-blur-sm" aria-hidden="true">
           <Atom size={48} className="text-blue-400" />
         </div>
         <h2 className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mb-6">
           3D Chemical Geometry
         </h2>
         <p className="text-lg md:text-xl text-slate-400 max-w-2xl mb-10 leading-relaxed">
-          Explore 3D structures.
+          Explore and interact with complex 3D molecular structures and chemical geometries directly in your browser.
         </p>
         
         <button 
