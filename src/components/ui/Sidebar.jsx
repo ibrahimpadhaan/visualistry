@@ -17,7 +17,7 @@ export const Sidebar = ({ mobileMenuOpen, setMobileMenuOpen }) => {
           <div className="p-2 bg-blue-500/10 rounded-xl text-blue-400">
             <Atom size={24} />
           </div>
-          <h1 className="font-bold text-xl text-slate-100 tracking-tight">Visualistry</h1>
+          <h1 className="font-bold text-xl text-slate-100 tracking-tight"><a href="/">Visualistry</a></h1>
         </div>
         <button 
           className="md:hidden p-2 -mr-2 text-slate-400 hover:text-slate-200"
