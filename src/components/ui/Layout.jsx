@@ -8,7 +8,7 @@ import { Menu } from 'lucide-react';
 export const Layout = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <div className="flex h-screen w-full bg-slate-950 overflow-hidden text-slate-200 font-sans relative">
+    <div className="flex h-dvh w-full bg-slate-950 overflow-hidden text-slate-200 font-sans relative">
       {/* Mobile Top Bar */}
       <div className="md:hidden absolute top-4 left-4 z-20">
         <button 
